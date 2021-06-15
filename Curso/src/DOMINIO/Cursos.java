@@ -21,6 +21,7 @@ public void mostrarNotas(){
     }
 }
 public void setPromedio(){
+  //variable cantidad esta por demas
     double promedio=0;
     int cantidad=0;
     double suma=0;
@@ -32,6 +33,7 @@ public void setPromedio(){
     this.promedio=promedio;
 }
 public void setEstudiantesEncimaPromedio(){
+  
    int estudiantes=0;
      for(int i = 0;i<12;i++){
        if(this.promedio<=notas[i]){
