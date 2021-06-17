@@ -1,11 +1,10 @@
-
 package pruebaunoguano;
 import java.util.Scanner;
 public class PruebaUnoGuano {
 
     
  public static void main(String[] args) {
-        int n=4;
+        int n=2;
          Estudiante [] estudiante;
          estudiante=new Estudiante[n];
          System.out.println("Inserte los estudiantes: ");
@@ -17,11 +16,12 @@ public class PruebaUnoGuano {
          System.out.println("El porcentaje de mujeres sobre el promedio es:"+  estudiantesobrepromedio(n,estudiante,"m"));
     }
  
-  static Scanner datos ;
+
   
  public static void llenarestudiantes(int n,Estudiante [] estudiante) {
-   datos = new Scanner(System.in);
+  
      for(int i=0;i<n;i++){
+         Scanner  datos = new Scanner(System.in); ;
          System.out.println("Ingrese  la informacion del estudiante");
          String nombre=datos.nextLine();
          String genero=datos.nextLine();
@@ -49,23 +49,32 @@ public class PruebaUnoGuano {
     double porcentaje=0;
     int cantidad=0;
    for(int i=0;i<n;i++){
-    if(genero==estudiante[i].getgenero()){
+    if(genero.equals(estudiante[i].getgenero())){
         cantidad=cantidad+1;
     }
      }
     porcentaje=(cantidad*100)/n;
     return porcentaje;
    }
+    public static int calcularcantidad(int n,Estudiante [] estudiante,String genero){
+    int cantidad=0;
+   for(int i=0;i<n;i++){
+    if(genero.equals(estudiante[i].getgenero())){
+        cantidad=cantidad+1;
+    }
+     }
+   return cantidad;
+   }
    public static double estudiantesobrepromedio(int n,Estudiante [] estudiante,String genero){
        double promedio=calcularpromedio(n ,estudiante);
        int cantidad=0;
        double porcentaje=0;
         for(int i=0;i<n;i++){
-         if((estudiante[i].getnota() >= promedio) && (genero == estudiante[i].getgenero())){
+         if((estudiante[i].getnota() >= promedio) && (genero.equals(estudiante[i].getgenero()))){
          cantidad=cantidad+1;
     }
      }
-    porcentaje=(cantidad*100)/n;
+    porcentaje=(cantidad*100)/calcularcantidad(n,estudiante,genero);
     return porcentaje;
    }
    
