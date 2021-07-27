@@ -3,9 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/ARIEL%20PC/Desktop/2DO%20Semestre/Relaciones/src/Dominio/Fecha.java</file>
-            <file>file:/C:/Users/ARIEL%20PC/Desktop/2DO%20Semestre/Relaciones/src/Dominio/Empleado.java</file>
-            <file>file:/C:/Users/ARIEL%20PC/Desktop/2DO%20Semestre/Relaciones/src/test/TestEmpleadoFecha.java</file>
+            <file>file:/C:/Users/ARIEL%20PC/Desktop/proyecto3725/Relaciones/src/Dominio/Curso.java</file>
+            <file>file:/C:/Users/ARIEL%20PC/Desktop/proyecto3725/Relaciones/src/Dominio/Estudiante.java</file>
+            <file>file:/C:/Users/ARIEL%20PC/Desktop/proyecto3725/Relaciones/src/Dominio/Fecha.java</file>
+            <file>file:/C:/Users/ARIEL%20PC/Desktop/proyecto3725/Relaciones/src/test/TestCursoEtudiante.java</file>
         </group>
     </open-files>
 </project-private>
