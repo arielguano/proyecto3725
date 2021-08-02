@@ -9,4 +9,5 @@ public class Facultad {
     private ArrayList<Profesor> profesores; 
     private ArrayList<Carrera> carreras; 
     private Director director =new Director();
+    private ArrayList<Profesor> profesores = new ArrayList<>;
 }

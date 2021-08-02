@@ -8,4 +8,5 @@ public class Carrera {
       //nombre de la carrera
     private int codigoNrc;
     private String nombreCarr;
+    private Facultad facultad;
 }
